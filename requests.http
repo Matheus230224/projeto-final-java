@@ -1,4 +1,4 @@
-### Testar o endpoint de listagem 
+### Testar o endpoint de listagem
 GET http://localhost:8080/produtos
 Accept: application/json
 
@@ -12,3 +12,8 @@ Content-Type: application/json
   "nome": "Teclado Mecânico",
   "preco": 299.90
 }
+
+###
+
+### Deletar um produto 
+DELETE http://localhost:8080/produtos/1

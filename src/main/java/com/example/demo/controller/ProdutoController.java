@@ -22,4 +22,10 @@ public class ProdutoController {
     public Produto criar(@RequestBody Produto produto) {
         return service.criar(produto);
     }
+
+    // --- NOVO MÉTODO ADICIONADO AQUI ---
+    @DeleteMapping("/{id}")
+    public void deletar(@PathVariable Long id) {
+        service.deletar(id);
+    }
 }

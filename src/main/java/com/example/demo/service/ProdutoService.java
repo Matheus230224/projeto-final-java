@@ -19,4 +19,9 @@ public class ProdutoService {
     public Produto criar(Produto p) {
         return repository.save(p);
     }
+
+    // --- NOVO MÉTODO ADICIONADO AQUI ---
+    public void deletar(Long id) {
+        repository.deleteById(id);
+    }
 }
